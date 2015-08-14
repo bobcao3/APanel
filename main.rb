@@ -6,6 +6,9 @@ class MainWindow < Gtk::Window
 
 	def initialize
 		super(:toplevel)
+		self.skip_taskbar_hint = true
+		self.skip_pager_hint = true
+		self.set_type_hint(Gdk::WindowTypeHint::DOCK)
 		
 		@box = Gtk::Box.new(:horizontal, 1)
 		@button_applications = Gtk::Button.new(:label => "Applications", :mnemonic => "Applications", :stock_id => nil)
@@ -21,6 +24,7 @@ class MainWindow < Gtk::Window
 		
 		screen = Gdk::Screen.default
 		self.resize(screen.width, 32)
+
 	end
 	
 end
