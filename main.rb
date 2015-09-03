@@ -40,7 +40,7 @@ class MainWindow < Gtk::Window
 		super(:toplevel)
 		self.skip_taskbar_hint = true
 		self.skip_pager_hint = true
-		#self.set_type_hint(Gdk::WindowTypeHint::DOCK)
+		self.set_type_hint(Gdk::WindowTypeHint::DOCK)
 		
 		@box = Gtk::Box.new(:horizontal, 1)
 		@button_applications = Gtk::Button.new(:label => "Applications", :mnemonic => "Applications", :stock_id => nil)
