@@ -1,2 +1,2 @@
 # APanel
-A light-weight Panel
+A light-weight Panel in vala
