@@ -81,7 +81,7 @@ public class MainWindow : Gtk.Window {
 	
 	public MainWindow () {
 		this.title = "APanel";
-		//this.set_type_hint (Gdk.WindowTypeHint.DOCK);
+		this.set_type_hint (Gdk.WindowTypeHint.DOCK);
 		
 		Gdk.Screen screen = Gdk.Screen.get_default ();
 		this.set_default_size (screen.get_width (), 32);
